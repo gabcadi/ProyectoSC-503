@@ -1,0 +1,490 @@
+ID_DISTRITO,DISTRITO
+1,Carmen
+2,Merced
+3,Hospital
+4,Catedral
+5,Zapote
+6,San Francisco de Dos Ríos
+7,La Uruca
+8,Mata Redonda
+9,Pavas
+10,Hatillo
+11,San Sebastián
+12,Escazú
+13,San Antonio
+14,San Rafael
+15,Desamparados
+16,San Miguel
+17,San Juan de Dios
+18,San Rafael Arriba
+19,San Rafael Abajo
+20,Gravilias
+21,Damas
+22,Santiago
+23,Mercado
+24,San Isidro de El General
+25,General Viejo
+26,Daniel Flores
+27,Rivas
+28,San Pedro
+29,Río Nuevo
+30,Páramo
+31,Buenavista
+32,Pilón
+33,Santa Lucía
+34,Tinamaste
+35,Platanares
+36,Pejibaye
+37,Cajón
+38,Barú
+39,Calamar
+40,Puriscal
+41,Barbacoas
+42,Grifo Alto
+43,San Rafael
+44,Candelarita
+45,Desamparaditos
+46,San Antonio
+47,Chires
+48,Santiago de Puriscal
+49,San Pablo
+50,Santa Marta
+51,San Pedro
+52,San Rafael de Oreamuno
+53,La Unión
+54,San José de la Montaña
+55,Barva
+56,San Pedro de Barva
+57,San Pablo
+58,San Roque
+59,Santa Lucía
+60,San Rafael de Barva
+61,Paraíso  
+62,Santiago  
+63,Orosi  
+64,Cachí  
+65,Llanos de Santa Lucía  
+66,San Rafael  
+67,San Ramón de Tres Ríos  
+68,Patalillo  
+69,Dulce Nombre de Cartago  
+70,San Isidro de El Guarco  
+71,Tierra Blanca  
+72,Dulce Nombre de San José  
+73,Cervantes  
+74,La Suiza  
+75,Tucurrique  
+76,Pejibaye  
+77,Pacayas  
+78,San Diego de La Unión  
+79,San Juan de Tres Ríos  
+80,San Rafael  
+81,San Miguel  
+82,San Pedro de Poás  
+83,San Rafael de Poás  
+84,Carrillos  
+85,Sabanilla  
+86,San Isidro  
+87,San José de Alajuela  
+88,Sabanilla de Alajuela  
+89,San Rafael  
+90,San Pedro  
+91,Santiago  
+92,San Antonio  
+93,San Lorenzo  
+94,Bebedero  
+95,Las Juntas de Abangares  
+96,Tilarán  
+97,Quebrada Grande  
+98,Tierras Morenas  
+99,Arenal  
+100,San Pablo de Turrubares  
+101,San Isidro de Heredia
+102,San Francisco de Heredia
+103,Barva de Heredia
+104,Santo Domingo
+105,Santa Bárbara
+106,San Rafael de Heredia
+107,San José de la Montaña
+108,San Vicente
+109,San Juan de Santa Bárbara
+110,San Miguel de Sarapiquí
+111,La Virgen
+112,La Danta
+113,Puerto Viejo
+114,Belén
+115,Río Segundo
+116,San Isidro de Alajuela
+117,San Juan de Alajuela
+118,San Rafael de Alajuela
+119,Orotina
+120,San Mateo
+121,Atenas
+122,San Antonio de Atenas
+123,San Isidro de Atenas
+124,Santa Eulalia
+125,Puriscal
+126,San Pablo de Puriscal
+127,Desamparados
+128,San Juan de Desamparados
+129,San Antonio de Desamparados
+130,San Rafael de Desamparados
+131,Patarrá
+132,Alajuelita
+133,San José de Alajuelita
+134,Escazú
+135,San Antonio de Escazú
+136,La Uruca
+137,Pavas
+138,Zapote
+139,Hatillo
+140,San Sebastián
+141,Escazú
+142,San Antonio
+143,San Rafael
+144,Desamparados
+145,San Miguel
+146,San Juan de Dios
+147,San Rafael Arriba
+148,San Rafael Abajo
+149,Gravilias
+150,Damas
+151,Santiago
+152,Mercado
+153,San Isidro de El General
+154,General Viejo
+155,Daniel Flores
+156,Rivas
+157,San Pedro
+158,Río Nuevo
+159,Páramo
+160,Buenavista
+161,Pilón
+162,Santa Lucía
+163,Tinamaste
+164,Platanares
+165,Pejibaye
+166,Cajón
+167,Barú
+168,Calamar
+169,Puriscal
+170,Barbacoas
+171,Grifo Alto
+172,San Rafael
+173,Candelarita
+174,Desamparaditos
+175,San Antonio
+176,Chires
+177,Santiago de Puriscal
+178,San Pablo
+179,Santa Marta
+180,San Pedro
+181,San Rafael de Oreamuno
+182,La Unión
+183,San José de la Montaña
+184,Barva
+185,San Pedro de Barva
+186,San Pablo
+187,San Roque
+188,Santa Lucía
+189,San Rafael de Barva
+190,Paraíso
+191,Santiago
+192,Orosi
+193,Cachí
+194,Llanos de Santa Lucía
+195,San Rafael
+196,San Ramón de Tres Ríos
+197,Patalillo
+198,Dulce Nombre de Cartago
+199,San Isidro de El Guarco
+200,Tierra Blanca
+201,La Suiza
+202,Tucurrique
+203,Pejibaye
+204,Pacayas
+205,San Diego de La Unión
+206,San Juan de Tres Ríos
+207,San Rafael
+208,San Miguel
+209,San Pedro de Poás
+210,San Rafael de Poás
+211,Carrillos
+212,Sabanilla
+213,San Isidro
+214,San José de Alajuela
+215,Sabanilla de Alajuela
+216,San Rafael
+217,San Pedro
+218,Santiago
+219,San Antonio
+220,San Lorenzo
+221,Bebedero
+222,Las Juntas de Abangares
+223,Tilarán
+224,Quebrada Grande
+225,Tierras Morenas
+226,Arenal
+227,San Pablo de Turrubares
+228,San Andrés
+229,San Ramón
+230,San Gerardo
+231,San Luis
+232,La Cruz
+233,Liberia
+234,Filadelfia
+235,Nicoya
+236,Sámara
+237,Nosara
+238,La Cruz
+239,León Cortés
+240,San Isidro de León Cortés
+241,San Antonio de León Cortés
+242,San Pedro de León Cortés
+243,San Rafael de León Cortés
+244,San Juan de León Cortés
+245,Candelaria
+246,San Rafael de Oreamuno
+247,San Pablo de Oreamuno
+248,San José de Oreamuno
+249,Santa Rosa
+250,San Isidro de Oreamuno
+251,Desamparados
+252,San Juan de Desamparados
+253,San Antonio de Desamparados
+254,San Rafael de Desamparados
+255,Patarrá
+256,Alajuelita
+257,San José de Alajuelita
+258,Escazú
+259,San Antonio de Escazú
+260,La Uruca
+261,Pavas
+262,Zapote
+263,Hatillo
+264,San Sebastián
+265,Escazú
+266,San Antonio
+267,San Rafael
+268,Desamparados
+269,San Miguel
+270,San Juan de Dios
+271,San Rafael Arriba
+272,San Rafael Abajo
+273,Gravilias
+274,Damas
+275,Santiago
+276,Mercado
+277,San Isidro de El General
+278,General Viejo
+279,Daniel Flores
+280,Rivas
+281,San Pedro
+282,Río Nuevo
+283,Páramo
+284,Buenavista
+285,Pilón
+286,Santa Lucía
+287,Tinamaste
+288,Platanares
+289,Pejibaye
+290,Cajón
+291,Barú
+292,Calamar
+293,Puriscal
+294,Barbacoas
+295,Grifo Alto
+296,San Rafael
+297,Candelarita
+298,Desamparaditos
+299,San Antonio
+300,Chires
+301,San Rafael de Oreamuno
+302,La Unión
+303,San José de la Montaña
+304,Barva
+305,San Pedro de Barva
+306,San Pablo
+307,San Roque
+308,Santa Lucía
+309,San Rafael de Barva
+310,Paraíso
+311,Santiago
+312,Orosi
+313,Cachí
+314,Llanos de Santa Lucía
+315,San Rafael
+316,San Ramón de Tres Ríos
+317,Patalillo
+318,Dulce Nombre de Cartago
+319,San Isidro de El Guarco
+320,Tierra Blanca
+321,Dulce Nombre de San José
+322,Cervantes
+323,La Suiza
+324,Tucurrique
+325,Pejibaye
+326,Pacayas
+327,San Diego de La Unión
+328,San Juan de Tres Ríos
+329,San Rafael
+330,San Miguel
+331,San Pedro de Poás
+332,San Rafael de Poás
+333,Carrillos
+334,Sabanilla
+335,San Isidro
+336,San José de Alajuela
+337,Sabanilla de Alajuela
+338,San Rafael
+339,San Pedro
+340,Santiago
+341,San Antonio
+342,San Lorenzo
+343,Bebedero
+344,Las Juntas de Abangares
+345,Tilarán
+346,Quebrada Grande
+347,Tierras Morenas
+348,Arenal
+349,San Pablo de Turrubares
+350,San Andrés
+351,San Ramón
+352,San Gerardo
+353,San Luis
+354,La Cruz
+355,Liberia
+356,Filadelfia
+357,Nicoya
+358,Sámara
+359,Nosara
+360,La Cruz
+361,León Cortés
+362,San Isidro de León Cortés
+363,San Antonio de León Cortés
+364,San Pedro de León Cortés
+365,San Rafael de León Cortés
+366,San Juan de León Cortés
+367,Candelaria
+368,San Rafael de Oreamuno
+369,San Pablo de Oreamuno
+370,San José de Oreamuno
+371,Santa Rosa
+372,San Isidro de Oreamuno
+373,Desamparados
+374,San Juan de Desamparados
+375,San Antonio de Desamparados
+376,San Rafael de Desamparados
+377,Patarrá
+378,Alajuelita
+379,San José de Alajuelita
+380,Escazú
+381,San Antonio de Escazú
+382,La Uruca
+383,Pavas
+384,Zapote
+385,Hatillo
+386,San Sebastián
+387,Escazú
+388,San Antonio
+389,San Rafael
+390,Desamparados
+391,San Miguel
+392,San Juan de Dios
+393,San Rafael Arriba
+394,San Rafael Abajo
+395,Gravilias
+396,Damas
+397,Santiago
+398,Mercado
+399,San Isidro de El General
+400,General Viejo
+401,General Viejo
+402,Daniel Flores
+403,Rivas
+404,San Pedro
+405,Río Nuevo
+406,Páramo
+407,Buenavista
+408,Pilón
+409,Santa Lucía
+410,Tinamaste
+411,Platanares
+412,Pejibaye
+413,Cajón
+414,Barú
+415,Calamar
+416,Puriscal
+417,Barbacoas
+418,Grifo Alto
+419,San Rafael
+420,Candelarita
+421,Desamparaditos
+422,San Antonio
+423,Chires
+424,Santiago de Puriscal
+425,San Pablo
+426,Santa Marta
+427,San Pedro
+428,San Rafael de Oreamuno
+429,La Unión
+430,San José de la Montaña
+431,Barva
+432,San Pedro de Barva
+433,San Pablo
+434,San Roque
+435,Santa Lucía
+436,San Rafael de Barva
+437,Paraíso
+438,Santiago
+439,Orosi
+440,Cachí
+441,Llanos de Santa Lucía
+442,San Rafael
+443,San Ramón de Tres Ríos
+444,Patalillo
+445,Dulce Nombre de Cartago
+446,San Isidro de El Guarco
+447,Tierra Blanca
+448,Dulce Nombre de San José
+449,Cervantes
+450,La Suiza
+451,Tucurrique
+452,Pejibaye
+453,Pacayas
+454,San Diego de La Unión
+455,San Juan de Tres Ríos
+456,San Rafael
+457,San Miguel
+458,San Pedro de Poás
+459,San Rafael de Poás
+460,Carrillos
+461,Sabanilla
+462,San Isidro
+463,San José de Alajuela
+464,Sabanilla de Alajuela
+465,San Rafael
+466,San Pedro
+467,Santiago
+468,San Antonio
+469,San Lorenzo
+470,Bebedero
+471,Las Juntas de Abangares
+472,Tilarán
+473,Quebrada Grande
+474,Tierras Morenas
+475,Arenal
+476,San Pablo de Turrubares
+477,San Andrés
+478,San Ramón
+479,San Gerardo
+480,San Luis
+481,La Cruz
+482,Liberia
+483,Filadelfia
+484,Nicoya
+485,Sámara
+486,Nosara
+487,La Cruz
+488,León Cortés
+489,San Isidro de León Cortés

@@ -1,0 +1,85 @@
+ID_CANTON,CANTON
+1,San José  
+2,Escazú  
+3,Desamparados  
+4,Puriscal  
+5,Tarrazú  
+6,Aserrí  
+7,Mora  
+8,Goicoechea  
+9,Santa Ana  
+10,Alajuelita  
+11,Vázquez de Coronado  
+12,Acosta  
+13,Tibás  
+14,Moravia  
+15,Montes de Oca  
+16,Turrubares  
+17,Dota  
+18,Curridabat  
+19,Pérez Zeledón  
+20,León Cortés  
+21,Cartago  
+22,Paraíso  
+23,La Unión  
+24,Jiménez  
+25,Turrialba  
+26,Alvarado  
+27,Oreamuno  
+28,El Guarco  
+29,Heredia  
+30,Barva  
+31,Santo Domingo  
+32,Santa Bárbara  
+33,San Rafael  
+34,San Isidro  
+35,Belén  
+36,Flores  
+37,San Pablo  
+38,Sarapiquí  
+39,Alajuela  
+40,San Ramón  
+41,Grecia  
+42,San Mateo  
+43,Atenas  
+44,Naranjo  
+45,Palmares  
+46,Poás  
+47,Orotina  
+48,San Carlos  
+49,Zarcero  
+50,Valverde Vega  
+51,Upala  
+52,Los Chiles  
+53,Guatuso  
+54,Cartagena  
+55,Liberia  
+56,Nicoya  
+57,Santa Cruz  
+58,Bagaces  
+59,Carrillo  
+60,Cañas  
+61,Abangares  
+62,Tilarán  
+63,Nandayure  
+64,La Cruz  
+65,Hojancha  
+66,Puntarenas  
+67,Esparza  
+68,Garabito  
+69,Montes de Oro  
+70,Quepos  
+71,Parrita  
+72,Corredores  
+73,Osa  
+74,Golfito  
+75,Coto Brus  
+76,Aguirre  
+77,Buenos Aires  
+78,Pococí  
+79,Guácimo  
+80,Limón  
+81,Matina  
+82,Siquirres  
+83,Talamanca  
+84,Pocora  
