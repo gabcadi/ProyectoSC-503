@@ -73,10 +73,39 @@ app.get('/getAllUsuarios', async (req, res) => {
 
 app.get('/getProducto', async (req, res) => {
   try {
-    const inventario = await executeQuery('SELECT NOMBRE, DESCRIPCION, PRECIO FROM FIDE_PRODUCTO_TB WHERE ID_ESTADO = 1');
+    const inventario = await executeQuery('SELECT NOMBRE, DESCRIPCION, PRECIO, ID_PRODUCTO FROM FIDE_PRODUCTO_TB WHERE ID_ESTADO = 1');
     res.json(inventario);
   } catch (error) {
     res.status(500).json({ error: error.message });
+  }
+});
+
+
+app.put('/deleteProducto/:id', async (req, res) => {
+  const { id } = req.params;
+  let connection;
+
+  try {
+    connection = await oracledb.getConnection(dbConfig);
+
+    await connection.execute(
+      `UPDATE FIDE_PRODUCTO_TB SET ID_ESTADO = 0 WHERE ID_PRODUCTO = :id`,
+      { id },
+      { autoCommit: true }
+    );
+
+    res.status(200).send('Producto desactivado exitosamente');
+  } catch (err) {
+    console.error('Error al desactivar producto:', err);
+    res.status(500).send('Error del servidor');
+  } finally {
+    if (connection) {
+      try {
+        await connection.close();
+      } catch (err) {
+        console.error('Error closing connection:', err);
+      }
+    }
   }
 });
 
@@ -145,32 +174,33 @@ app.get('/getAllDistritos', async (req, res) => {
   }
 });
 
-async function agregarDireccion(calle, numeroCasa, otrasSenas, idPais, idProvincia, idCanton, idDistrito) {
+app.post('/addProducto', async (req, res) => {
+  const { nombre, descripcion, precio } = req.body;
   let connection;
+
   try {
     connection = await oracledb.getConnection(dbConfig);
 
     const result = await connection.execute(
-      `INSERT INTO FIDE_DIRECCION_TB (ID_DIRECCION, CALLE, NUMERO_CASA, OTRAS_SENAS, ID_PAIS, ID_PROVINCIA, ID_CANTON, ID_DISTRITO)
-       VALUES (FIDE_DIRECCION_ID_SEQ.NEXTVAL, :calle, :numeroCasa, :otrasSenas, :idPais, :idProvincia, :idCanton, :idDistrito)
-       RETURNING ID_DIRECCION INTO :idDireccion`,
+      `INSERT INTO FIDE_PRODUCTO_TB (ID_PRODUCTO, NOMBRE, DESCRIPCION, PRECIO, ID_ESTADO)
+       VALUES (FIDE_PRODUCTO_ID_SEQ.NEXTVAL, :nombre, :descripcion, :precio, 1)
+       RETURNING ID_PRODUCTO, NOMBRE, DESCRIPCION, PRECIO INTO :idProducto, :nombre, :descripcion, :precio`,
       {
-        calle,
-        numeroCasa,
-        otrasSenas,
-        idPais,
-        idProvincia,
-        idCanton,
-        idDistrito,
-        idDireccion: { dir: oracledb.BIND_OUT, type: oracledb.NUMBER }
+        nombre,
+        descripcion,
+        precio,
+        idProducto: { dir: oracledb.BIND_OUT, type: oracledb.NUMBER },
+        nombre: { dir: oracledb.BIND_OUT, type: oracledb.STRING },
+        descripcion: { dir: oracledb.BIND_OUT, type: oracledb.STRING },
+        precio: { dir: oracledb.BIND_OUT, type: oracledb.NUMBER }
       },
       { autoCommit: true }
     );
 
-    return result.outBinds.idDireccion[0];
+    res.status(201).json(result.outBinds);
   } catch (err) {
-    console.error('Error al agregar dirección:', err);
-    throw err;
+    console.error('Error al agregar producto:', err);
+    res.status(500).send('Error del servidor');
   } finally {
     if (connection) {
       try {
@@ -180,7 +210,44 @@ async function agregarDireccion(calle, numeroCasa, otrasSenas, idPais, idProvinc
       }
     }
   }
-}
+});
+
+
+app.put('/updateProducto/:id', async (req, res) => {
+  const { id } = req.params;
+  const { nombre, descripcion, precio } = req.body;
+  let connection;
+
+  try {
+    connection = await oracledb.getConnection(dbConfig);
+
+    const result = await connection.execute(
+      `UPDATE FIDE_PRODUCTO_TB
+       SET NOMBRE = :nombre, DESCRIPCION = :descripcion, PRECIO = :precio
+       WHERE ID_PRODUCTO = :id`,
+      {
+        nombre,
+        descripcion,
+        precio,
+        id
+      },
+      { autoCommit: true }
+    );
+
+    res.status(200).json({ id, nombre, descripcion, precio });
+  } catch (err) {
+    console.error('Error al actualizar producto:', err);
+    res.status(500).send('Error del servidor');
+  } finally {
+    if (connection) {
+      try {
+        await connection.close();
+      } catch (err) {
+        console.error('Error closing connection:', err);
+      }
+    }
+  }
+});
 
 app.post('/agregarUsuario', async (req, res) => {
   const { nombre, primerApellido, segundoApellido, correo, telefono, idPais, idProvincia, idCanton, idDistrito, calle, numeroCasa, otrasSenas, contrasena } = req.body;
@@ -188,21 +255,18 @@ app.post('/agregarUsuario', async (req, res) => {
   let connection;
 
   try {
-    const idDireccion = await agregarDireccion(calle, numeroCasa, otrasSenas, idPais, idProvincia, idCanton, idDistrito);
-
     connection = await oracledb.getConnection(dbConfig);
 
     const usuarioQuery = `
       INSERT INTO FIDE_USUARIO_TB (
-        NOMBRE, PRIMER_APELLIDO, SEGUNDO_APELLIDO, CORREO, TELEFONO, ID_DIRECCION, CONTRASENA
-      ) VALUES (:nombre, :primerApellido, :segundoApellido, :correo, :telefono, :idDireccion, :contrasena)`;
+        ID_USUARIO, NOMBRE, PRIMER_APELLIDO, SEGUNDO_APELLIDO, CORREO, TELEFONO, CONTRASENA, ID_ESTADO
+      ) VALUES (FIDE_USUARIO_ID_SEQ.NEXTVAL, :nombre, :primerApellido, :segundoApellido, :correo, :telefono, :contrasena, 1)`;
     const usuarioBinds = {
       nombre,
       primerApellido,
       segundoApellido,
       correo,
       telefono,
-      idDireccion,
       contrasena,
     };
 

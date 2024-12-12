@@ -5,6 +5,7 @@ import { FaUser } from "react-icons/fa";
 import { IoFastFoodSharp } from "react-icons/io5";
 import { MdOutlineInventory } from "react-icons/md";
 import { FaShop } from "react-icons/fa6";
+import { BiLogOut } from "react-icons/bi";
 
 export default function SidebarNavigation() {
 	const [sidenav, setSidenav] = useState(true);
@@ -63,8 +64,11 @@ export default function SidebarNavigation() {
 						</Link>
 						<Link to="/Locales" className="flex text-sm font-medium text-gray-700 py-2 px-2 hover:bg-teal-500 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out">
 							<FaShop size={20}/>
-
 							<span className='ms-2'>Locales</span>
+						</Link>
+						<Link to="/Login" className="flex text-sm font-medium text-gray-700 py-2 px-2 hover:bg-teal-500 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out">
+							<BiLogOut size={20} />
+							<span className='ms-2'>Log out</span>
 						</Link>
 					</div>
 				</div>
