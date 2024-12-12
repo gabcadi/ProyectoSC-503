@@ -131,5 +131,6 @@ BEGIN
     RETURNING ID_DIRECCION INTO V_ID_DIRECCION;
 
     -- Retornar el ID de la nueva direccion creada
-    RETURN V_ID_CURSO;
+    RETURN V_ID_DIRECCION;
 END;
+/

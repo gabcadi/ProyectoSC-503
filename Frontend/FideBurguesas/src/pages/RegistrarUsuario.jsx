@@ -49,18 +49,16 @@ export default function RegistrarUsuario() {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-        console.log(formData);
-        
-		// axios
-		// 	.post('http://localhost:5000/agregarUsuario', formData)
-		// 	.then((response) => {
-		// 		console.log('Usuario agregado:', response.data);
-		// 		// Handle success (e.g., show a success message, redirect, etc.)
-		// 	})
-		// 	.catch((error) => {
-		// 		console.error('Error al agregar usuario:', error);
-		// 		// Handle error (e.g., show an error message)
-		// 	});
+		axios
+			.post('http://localhost:5000/agregarUsuario', formData)
+			.then((response) => {
+				console.log('Usuario agregado:', response.data);
+				// Handle success (e.g., show a success message, redirect, etc.)
+			})
+			.catch((error) => {
+				console.error('Error al agregar usuario:', error);
+				// Handle error (e.g., show an error message)
+			});
 	};
 
 	return (
